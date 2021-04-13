@@ -1279,6 +1279,7 @@ a:hover, a:active {
   flex-wrap: nowrap;
   align-items: stretch;
   flex: 1 auto;
+  
 }
 
 .octf-mainbar-row > [class^=octf-col] {
@@ -1328,6 +1329,47 @@ a:hover, a:active {
   width: auto;
   max-width: none;
 }
+
+/*ChatBot*/
+
+
+/*ChatBot*/
+.chat_icon{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color:darkblue;
+	cursor: pointer;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background:white;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
+}
+
 
 .octf-header-module {
   display: inline-flex;
@@ -5707,8 +5749,8 @@ object {
 
 .wpcf7 .main-form {
   padding: 60px 48px;
-  background-image: linear-gradient(90deg, #00deff 0%, #7141b1 100%);
-  color: #fff;
+  background-image: linear-gradient(90deg, #CC5500 0%, #CC5500 100%);
+  color: #CC5500;
 }
 .wpcf7 .main-form h2 {
   color: #fff;

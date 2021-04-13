@@ -20,7 +20,54 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+
+    <!-- ChatBot -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
 </head>
+
+<!-- ChatBot -->
+<div class="chat_icon">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+    <div class="my-conv-form-wrapper">
+        <form action="" method="GET" class="hidden">
+
+            <select data-conv-question="Hello! How can I help you" name="category">
+                <option value="WebDevelopment">Website Development ?</option>
+                <option value="DigitalMarketing">Digital Marketing ?</option>
+            </select>
+
+            <div data-conv-fork="category">
+                <div data-conv-case="WebDevelopment">
+                    <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">
+                </div>
+                <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+                    <input type="text" name="companyName" data-conv-question="Please, enter your company name">
+                </div>
+            </div>
+
+            <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+            <input type="text" data-conv-question="Hi {name}, It's a pleasure to meet you." data-no-answer="true">
+
+            <input data-conv-question="Enter your e-mail"
+                data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                type="email" name="email" required placeholder="What's your e-mail?">
+
+            <select data-conv-question="Please Conform">
+                <option value="Yes">Confirm</option>
+            </select>
+
+        </form>
+    </div>
+</div>
+<!-- ChatBot end -->
 
 <body class="royal_preloader">
     <div id="page" class="site">
@@ -78,7 +125,7 @@
                                                     <li><a href="index-5.html">Home 5</a></li>
                                                 </ul>-->
                                             </li>
-                                            <li><a href="it-services.html">Product and Services</a>
+                                            <li><a href="ProductandServices.html">Product and Services</a>
                                                 <!-- <ul class="sub-menu">
                                                     <li><a href="about-us.html">About us</a></li>
                                                     <li><a href="why-choose-us.html">Why Choose Us</a></li>
@@ -98,15 +145,15 @@
                                                     <li><a href="cooming-soon.html">Coming Soon</a></li>
                                                 </ul> -->
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">What's up (Blogs and
+                                            <li><a href="#">What's up (Blogs and
                                                     Announcements)</a>
-                                                <ul class="sub-menu">
+                                                <!-- <ul class="sub-menu">
                                                     <li><a href="it-services.html">It Services</a></li>
                                                     <li><a href="web-development.html">Web Development</a></li>
                                                     <li><a href="mobile-development.html">Mobile Development</a></li>
-                                                </ul>
+                                                </ul> -->
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">Advocacies</a>
+                                            <!-- <li class="menu-item-has-children"><a href="#">Advocacies</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
                                                     <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
@@ -133,25 +180,25 @@
                                                         </ul>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="blog.html">Testimonials</a>
+                                            </li> -->
+                                            <!-- <li class="menu-item-has-children"><a href="blog.html">Testimonials</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog.html">Blog Listing</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid</a></li>
                                                     <li><a href="post.html">Blog Single</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="contact.html">Upcoming Events</a></li>
-                                            <li><a href="contact.html">Global Partners</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="contact.html">Careers</a></li>
+                                            </li> -->
+                                            <li><a href="blog.html">Upcoming Events</a></li>
+                                            <li><a href="#">Global Partners</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <!-- <li><a href="contact.html">Careers</a></li> -->
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="octf-col cta-col text-right">
                                     <!-- Call To Action -->
                                     <div class="octf-btn-cta">
-
+<!-- 
                                         <div class="octf-header-module cart-btn-hover">
                                             <div class="site-header-cart">
                                                 <div class="widget woocommerce widget_shopping_cart">
@@ -161,12 +208,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="octf-header-module">
+                                        <!-- <div class="octf-header-module">
                                             <div class="toggle_search octf-cta-icons">
                                                 <i class="flaticon-search"></i>
-                                            </div>
+                                            </div> -->
                                             <!-- Form Search on Header -->
                                             <div class="h-search-form-field collapse">
                                                 <div class="h-search-form-inner">
@@ -194,7 +241,7 @@
                     <div class="mlogo_wrapper clearfix">
                         <div class="mobile_logo">
                             <a href="index.html">
-                                <img src="images/logo.svg" alt="Engitech">
+                                <img src="Logos - Products/8LAYER LOGO.png" alt="8Layer">
                             </a>
                         </div>
                         <div id="mmenu_toggle">
@@ -207,11 +254,11 @@
                                 <li class="menu-item-has-children current-menu-item current-menu-ancestor">
                                     <a href="index.html">Home</a>
                                     <ul class="sub-menu">
-                                        <li class="current-menu-item"><a href="index.html">8Layer</a></li>
+                                        <li class="current-menu-item"><a href="about-us.html">8Layer</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Products and Services</a>
-                                    <ul class="sub-menu">
+                                <li><a href="#">Products and Services</a>
+                                    <!-- <ul class="sub-menu">
                                         <li><a href="about-us.html">About us</a></li>
                                         <li><a href="why-choose-us.html">Why Choose Us</a></li>
                                         <li><a href="our-team.html">Our team</a></li>
@@ -228,17 +275,17 @@
                                         <li><a href="faq.html">FAQS</a></li>
                                         <li><a href="404-error.html">404 Error</a></li>
                                         <li><a href="cooming-soon.html">Coming Soon</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">What’s Up (Blogs and Announcements)</a>
-                                    <ul class="sub-menu">
+                                <li><a href="#">What’s Up (Blogs and Announcements)</a>
+                                    <!-- <ul class="sub-menu">
                                         <li><a href="it-services.html">It Services</a></li>
                                         <li><a href="web-development.html">Web Development</a></li>
                                         <li><a href="mobile-development.html">Mobile Development</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Advocacies</a>
-                                    <ul class="sub-menu">
+                                <li><a href="#">Advocacies</a>
+                                    <!-- <ul class="sub-menu">
                                         <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
                                         <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
                                         <li class="menu-item-has-children"><a href="portfolio-grid.html">Portfolio
@@ -257,15 +304,15 @@
                                                 <li><a href="portfolio-details-3.html">Single Layout 3</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="menu-item-has-children"><a href="blog.html">Global Partners</a>
+                                <!-- <li class="menu-item-has-children"><a href="blog.html">Global Partners</a>
                                     <ul class="sub-menu">
                                         <li><a href="blog.html">Blog Listing</a></li>
                                         <li><a href="blog-grid.html">Blog Grid</a></li>
                                         <li><a href="post.html">Blog Single</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li><a href="contact.html">Contact Us</a></li>
                                 <li><a href="contact.html">Careers</a></li>
                             </ul>
@@ -1028,7 +1075,7 @@
                     </div>
                 </div>
             </section>
-            <section class="technology-v1">
+            <!-- <section class="technology-v1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -1079,8 +1126,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </section> -->
+<!-- 
             <section>
                 <div class="container">
                     <div class="row">
@@ -1177,12 +1224,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
 
         <footer id="site-footer" class="site-footer footer-v1">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="widget-footer">
                             <h5 class="text-white">Services</h5>
@@ -1232,9 +1279,9 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div>  
                     </div>
-                </div>
+                </div> -->
                 <div class="row mt-65">
                     <div class="col-md-5 mb-4 mb-md-0">
                         <img src="Logos - Products/8LAYER LOGO.png" alt="" class="lazyloaded" data-ll-status="loaded">

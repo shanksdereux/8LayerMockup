@@ -17,10 +17,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
 </head>
+<body>
+<div class="chat_icon">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
 
+<div class="chat_box"></div>
+
+</body>
 <body class="royal_preloader">
     <div id="page" class="site">
-        <header id="site-header" class="site-header header-overlay sticky-header header-style-2 header-fullwidth">
+        <header id="site-header" class="site-header header-style-2 header-fullwidth sticky-header header-static">
             <!-- Main Header start -->
             <div class="header-topbar">
                 <div class="octf-area-wrap">
@@ -68,20 +75,20 @@
                                 </div>
                                 <div class="octf-col menu-col">
                                     <nav id="site-navigation" class="main-navigation">
-                                        <ul class="menu nav-style-2">
-                                            <li>
-                                                <a href="about-us.html">8Layer</a>
-                                                <!-- <ul class="sub-menu">
-                                                    <li><a href="index.html">Home 1</a></li>
+                                        <ul class="menu">
+                                            <li class="menu-item-has-children">
+                                            <li><a href="index.html">8Layer</a></li>
+                                            <!--<ul class="sub-menu">
+                                                    <li class="current-menu-item"><a href="index.html">Home 1</a></li>
                                                     <li><a href="index-2.html">Home 2</a></li>
                                                     <li><a href="index-3.html">Home 3</a></li>
                                                     <li><a href="index-4.html">Home 4</a></li>
-                                                    <li class="current-menu-item"><a href="index-5.html">Home 5</a></li>
-                                                </ul> -->
+                                                    <li><a href="index-5.html">Home 5</a></li>
+                                                </ul>-->
                                             </li>
                                             <li><a href="ProductandServices.html">Product and Services</a>
-                                                <!-- <ul class="sub-menu">
-                                                    <li><a href="about-us.html">About us</a></li>
+                                                <!--<ul class="sub-menu">
+                                                    <li class="current-menu-item"><a href="about-us.html">About us</a></li>
                                                     <li><a href="why-choose-us.html">Why Choose Us</a></li>
                                                     <li><a href="our-team.html">Our team</a></li>
                                                     <li><a href="single-team.html">Single team</a></li>
@@ -97,18 +104,18 @@
                                                     <li><a href="faq.html">FAQS</a></li>
                                                     <li><a href="404-error.html">404 Error</a></li>
                                                     <li><a href="cooming-soon.html">Coming Soon</a></li>
-                                                </ul> -->
+                                                </ul>-->
                                             </li>
                                             <li><a href="#">What's up (Blogs and
                                                     Announcements)</a>
-                                                <!-- <ul class="sub-menu">
+                                                <!--<ul class="sub-menu">
                                                     <li><a href="it-services.html">It Services</a></li>
                                                     <li><a href="web-development.html">Web Development</a></li>
                                                     <li><a href="mobile-development.html">Mobile Development</a></li>
-                                                </ul> -->
+                                                </ul>-->
                                             </li>
-                                            <li><a href="#">Advocacies</a>
-                                                <!-- <ul class="sub-menu">
+                                            <!-- <li><a href="#">Advocacies</a> -->
+                                                <!--<ul class="sub-menu">
                                                     <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
                                                     <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
                                                     <li class="menu-item-has-children"><a href="portfolio-grid.html">Portfolio Grid</a>
@@ -125,14 +132,14 @@
                                                             <li><a href="portfolio-details-3.html">Single Layout 3</a></li>
                                                         </ul>
                                                     </li>
-                                                </ul> -->
+                                                </ul>-->
                                             </li>
                                             <!-- <li><a href="blog.html">Testimonials</a> -->
-                                                <!-- <ul class="sub-menu">
+                                                <!--<ul class="sub-menu">
                                                     <li><a href="blog.html">Blog Listing</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid</a></li>
                                                     <li><a href="post.html">Blog Single</a></li>
-                                                </ul> -->
+                                                </ul>-->
                                             </li>
                                             <li><a href="blog.html">Upcoming Events</a></li>
                                             <li><a href="#">Global Partners</a></li>
@@ -143,16 +150,18 @@
                                 </div>
                                 <div class="octf-col cta-col text-right">
                                     <!-- Call To Action -->
-                                    <div class="octf-btn-cta hstyle-2">
+                                    <div class="octf-btn-cta">
 
                                         <!-- <div class="octf-header-module cart-btn-hover">
                                             <div class="h-cart-btn octf-cta-icons">
-                                                <a class="cart-icon" href="cart-page.html"><i class="flaticon-shopper"></i><span class="count">0</span></a>
-                                            </div>  
+                                                <a class="cart-icon" href="cart-page.html"><i
+                                                        class="flaticon-shopper"></i><span class="count">0</span></a>
+                                            </div>
                                             <div class="site-header-cart">
                                                 <div class="widget woocommerce widget_shopping_cart">
                                                     <div class="widget_shopping_cart_content">
-                                                        <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                                                        <p class="woocommerce-mini-cart__empty-message">No products in
+                                                            the cart.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,7 +171,7 @@
                                             <div class="toggle_search octf-cta-icons">
                                                 <i class="flaticon-search"></i>
                                             </div>
-                                            Form Search on Header 
+                                              Form Search on Header
                                             <div class="h-search-form-field collapse">
                                                 <div class="h-search-form-inner">
                                                     <form role="search" method="get" id="hsearch-form"
@@ -175,9 +184,9 @@
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="octf-header-module">
+                                        <!-- <div class="octf-header-module">
                                             <div class="btn-cta-group contact-header">
                                                 <i class="fas fa-phone"></i>
                                                 <div class="cinfo-header">
@@ -186,8 +195,8 @@
                                                             href="tel:+1-800-456-478-23">+1-800-456-478-23</a></span>
                                                 </div>
                                             </div>
-                                        </div>
-
+                                        </div> -->
+<!-- 
                                         <div class="octf-header-module">
                                             <div class="btn-cta-group btn-cta-header">
                                                 <a class="octf-btn octf-btn-third" href="contact.html">Free Quote</a>
@@ -216,17 +225,18 @@
                     <div class="mmenu_wrapper">
                         <div class="mobile_nav collapse">
                             <ul id="menu-main-menu" class="mobile_mainmenu">
-                                <li class="menu-item-has-children current-menu-item current-menu-ancestor">
-                                    <a href="about-us.html">8Layer</a>
+                                <li>
+                                    <a href="index.html">8Layer</a>
                                     <!-- <ul class="sub-menu">
                                         <li><a href="index.html">Home 1</a></li>
                                         <li><a href="index-2.html">Home 2</a></li>
                                         <li><a href="index-3.html">Home 3</a></li>
                                         <li><a href="index-4.html">Home 4</a></li>
-                                        <li class="current-menu-item"><a href="index-5.html">Home 5</a></li>
+                                        <li><a href="index-5.html">Home 5</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="ProductandServices.html">Product and Services</a>
+                                <li><a href="#">What's up (Blogs and
+                                    Announcements)</a>
                                     <!-- <ul class="sub-menu">
                                         <li><a href="about-us.html">About us</a></li>
                                         <li><a href="why-choose-us.html">Why Choose Us</a></li>
@@ -246,15 +256,15 @@
                                         <li><a href="cooming-soon.html">Coming Soon</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="#">What's up (Blogs and
-                                        Announcements)</a>
+                                <li><a href="#">Advocacies</a>
+                                        
                                     <!-- <ul class="sub-menu">
-                                        <li><a href="it-services.html">It Services</a></li>
+                                        <li class="current-menu-item"><a href="it-services.html">It Services</a></li>
                                         <li><a href="web-development.html">Web Development</a></li>
                                         <li><a href="mobile-development.html">Mobile Development</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="#">Advocacies</a>
+                                <!-- <li><a href="#">Testimonials</a> -->
                                     <!-- <ul class="sub-menu">
                                         <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
                                         <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
@@ -276,17 +286,14 @@
                                         </li>
                                     </ul> -->
                                 </li>
-                                <!-- <li class="menu-item-has-children"><a href="blog.html">Testimonials</a> -->
+                                <li><a href="blog.html">Upcoming Events</a>
                                     <!-- <ul class="sub-menu">
                                         <li><a href="blog.html">Blog Listing</a></li>
                                         <li><a href="blog-grid.html">Blog Grid</a></li>
                                         <li><a href="post.html">Blog Single</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="blog.html">Upcoming Events</a></li>
-                                <!-- <li><a href="contact.html">Global Partners</a></li> -->
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <!-- <li><a href="contact.html">Careers</a></li> -->
+                                <li><a href="contact.html">Contacts</a></li>
                             </ul>
                         </div>
                     </div>
@@ -295,309 +302,238 @@
         </header>
 
         <div id="content" class="site-content">
-
-            <section class="top-v5">
+            <div class="page-header flex-middle">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-12 align-self-center">
-                            <div class="top-left-v5">
-                                <div class="ot-heading">
-                                    <!-- <span>// For Over 15 Years. For Millions of Users</span> -->
-                                    <h2 class="main-heading">Quarta</h2>
-                                </div>
-                                <p class="sub-text">Quarta is a digital wallet and settlement system that can be used in
-                                    various cashless transactions by just scanning its QR Code.</p>
-                                <div class="video-popup style-3">
-                                    <div class="btn-inner">
-                                        <a class="btn-play" href="https://vimeo.com/94686522"><i
-                                                class="flaticon-play"></i>
-                                            <span class="circle-1"></span>
-                                            <span class="circle-2"></span>
-                                        </a>
-                                    </div>
-                                    <span>video showcase</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-12">
-                            <div class="top-right-v5">
-                                <img src="8Layer Company Profile Repository/Untitled design.png" alt="">
-                            </div>
-                        </div>
+                    <div class="inner flex-middle">
+                        <h1 class="page-title">Products and Services</h1>
+                        <ul id="breadcrumbs" class="breadcrumbs none-style">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Products and Services</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-
-            <section class="service-v5">
+            </div>
+            <section class="service-page">
                 <div class="container">
-                    <div class="row mt--70 justify-content-center">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s1 md-mb-30">
-                                <a href="it-services.html" class="overlay"></a>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8 mb-4 mb-sm-0">
+                            <div class="ot-heading mb-0">
+                                <!--<span>// our service</span>-->
+                                <h2 class="main-heading">We Offer a Wide Variety of Products and Services</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-4 text-sm-right align-self-end">
+                            <div class="ot-button">
+                                <a href="web-development.html" class="octf-btn octf-btn-primary">all sevices</a>
+                            </div>
+                            <div class="space-10"></div>
+                        </div>
+                    </div>
+                    <div class="space-55"></div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">01</span>
                                 <div class="icon-main"><span class="flaticon-tablet"></span></div>
                                 <div class="content-box">
-                                    <h5>Custom Software Development</h5>
+                                    <h5>KahelOS XCD</h5>
+                                    <div>It is an operating system that is designed to be the new generation router,
+                                        caching and firewall box with CDN capability.</div>
+                                    <a href="ProductAndServicesKahel.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s2 md-mb-30">
-                                <a href="web-development.html" class="overlay"></a>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">02</span>
+                                <div class="icon-main"> <span class="flaticon-ui"></span></div>
+                                <div class="content-box">
+                                    <h5>8Layer Satellite Solution</h5>
+                                    <div>8Layer Satellite Solutions of 8SS is an efficient and cost-effective solution
+                                        that aims to provide localized internet..</div>
+                                    <a href="ProductAndServices8SS.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">03</span>
                                 <div class="icon-main"><span class="flaticon-report"></span></div>
                                 <div class="content-box">
-                                    <h5>Outsoursing Development</h5>
+                                    <h5>Aksyon Sentral</h5>
+                                    <div>Aksyon Sentral ng Komunidad is a crime reporting tool that aims to facilitate
+                                        immediate action and response in cases of..</div>
+                                    <a href="ProductAndServicesAksyonSentral.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s3">
-                                <a href="mobile-development.html" class="overlay"></a>
-                                <div class="icon-main"><span class="flaticon-ui"></span></div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">04</span>
+                                <div class="icon-main"><span class="flaticon-shield"></span></div>
                                 <div class="content-box">
-                                    <h5>Software Product Development</h5>
+                                    <h5>One Country 100 and One Balikatan</h5>
+                                    <div>One Country 100 and One Balikatan are contact tracing mobile apps developed
+                                        during the height.. </div>
+                                    <a href="ProductAndServicesOneCountry100andOneBalikatan.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="space-110"></div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <div class="ot-heading">
-                                <!-- <span>// our services</span> -->
-                                <h2 class="main-heading">Key Features <br>Services</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="space-30"></div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="icon-box-s2 s2 border-s1 bg bg1 text-center">
-                                <div class="icon-main"><span class="flaticon-code"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="web-development.html">Quarta mobile app</a></h5>
-                                    <p>We carry more than just good coding skills. Our experience makes us stand out
-                                        from other web development.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="icon-box-s2 s2 border-s1 bg bg2 text-center">
-                                <div class="icon-main"><span class="flaticon-app"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="mobile-development.html">Cash-in and store money</a></h5>
-                                    <p>Create complex enterprise software, ensure reliable software integration,
-                                        modernise your legacy system.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="icon-box-s2 s2 border-s1 bg bg3 text-center">
-                                <div class="icon-main"><span class="flaticon-monitor"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="it-services.html">Remit/transfer money to other Quarta wallets</a></h5>
-                                    <p>Build the product you need on time with an experienced team that uses a clear and
-                                        effective design.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30 mb-md-0">
-                            <div class="icon-box-s2 s2 border-s1 bg bg4 text-center">
-                                <div class="icon-main"><span class="flaticon-browser"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="it-services.html">Make payments to merchants</a></h5>
-                                    <p>Turn to our experts to perform comprehensive, multi-stage testing and auditing of
-                                        your software.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30 mb-md-0">
-                            <div class="icon-box-s2 s2 border-s1 bg bg5 text-center">
-                                <div class="icon-main"><span class="flaticon-report-1"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="it-services.html">Pay bills</a></h5>
-                                    <p>Trust our top minds to eliminate workflow pain points, implement new tech, and
-                                        consolidate app.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="icon-box-s2 s2 border-s1 bg bg6 text-center">
-                                <div class="icon-main"><span class="flaticon-best"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="it-services.html">Cash-out money through banks and other accredited
-                                            stations</a></h5>
-                                    <p>Over the past decade, our customers succeeded by leveraging Intellectsoft’s
-                                        process of building, motivating.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="icon-box-s2 s2 border-s1 bg bg6 text-center">
-                                <div class="icon-main"><span class="flaticon-best"></span></div>
-                                <div class="content-box">
-                                    <h5><a href="it-services.html">Back-office</a></h5>
-                                    <p>Over the past decade, our customers succeeded by leveraging Intellectsoft’s
-                                        process of building, motivating.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="service-v5">
-                <div class="container">
-                    <div class="row mt--70 justify-content-center">
-                        <!-- <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s1 md-mb-30">
-                                <a href="it-services.html" class="overlay"></a>
-                                <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                <div class="content-box">
-                                    <h5>Custom Software Development</h5>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s2 md-mb-30">
-                                <a href="web-development.html" class="overlay"></a>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">05</span>
                                 <div class="icon-main"><span class="flaticon-report"></span></div>
                                 <div class="content-box">
-                                    <h5>Outsoursing Development</h5>
+                                    <h5>Aksyon Academy</h5>
+                                    <div>Aksyon Academy is a school and learning management system which functions as an
+                                        e-learning platform for learners and..</div>
+                                    <a href="ProductAndServicesAksyonAcademy.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-md-6">
-                            <div class="serv-box s1 v5 bg-s3">
-                                <a href="mobile-development.html" class="overlay"></a>
-                                <div class="icon-main"><span class="flaticon-ui"></span></div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">06</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
                                 <div class="content-box">
-                                    <h5>Software Product Development</h5>
+                                    <h5>Walloo</h5>
+                                    <div>Walloo is a homegrown and easy-to-use video conferencing tool. It has an
+                                        end-to-end encryption that allows data to be.. </div>
+                                    <a href="https://walloo.io/" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="space-110"></div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <div class="ot-heading">
-                                <!-- <span>// our services</span> -->
-                                <h2 class="main-heading">Benefits <br>Services</h2>
                             </div>
                         </div>
-                    </div>
-                    <div class="space-30"></div>
-                    <div class="row">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Blockchained transactions</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">07</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>RealView</h5>
+                                    <div>RealView is an augmented reality app that can be used to scan and recognize
+                                        logos, images or objects and display the.. </div>
+                                    <a href="ProductAndServicesRealView.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Encrypted data – both in transit and at rest</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Restricted access to authorized users only</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Fully-secured platform</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Several levels of verification of user’s identity and transaction limit</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div class="serv-box s1">
-                                    <div class="icon-main"><span class="flaticon-tablet"></span></div>
-                                    <div class="content-box">
-                                        <h5>Data is aggregated in Big Data platform with intelligent visualization</h5>
-                                        <!-- <div>We help businesses elevate their value through custom software development,
-                                            product design, QA and consultancy.
-                                            <ul>
-                                                <li class="active"><a href="#">eCommerce solutions</a></li>
-                                                <li><a href="#">Gamification software</a></li>
-                                                <li><a href="#">Client mobile apps</a></li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div> 
                         </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">08</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>Quarta</h5>
+                                    <div>Quarta is a digital wallet and settlement system that can be used in various
+                                        cashless transactions by just scanning its..</div>
+                                    <a href="ProductAndServicesQuarta.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">09</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>AksyonCrypt</h5>
+                                    <div>AskyonCrypt is an enhanced, “keyless”, and policy-based encryption system that
+                                        provides strong security to all your files..</div>
+                                    <a href="ProductAndServicesAksyonCrypt.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">10</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>AksyonShield</h5>
+                                    <div>AksyonShield is designed to be a shielding layer that provides security and
+                                        encryption that protects web applications from.. </div>
+                                    <a href="ProductAndServicesAksyonShield.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="serv-box-2 s2">
+                                <span class="big-number">11</span>
+                                <div class="icon-main"><span class="flaticon-report"></span></div>
+                                <div class="content-box">
+                                    <h5>AksyonChain</h5>
+                                    <div>AksyonChain is a blockchain technology tool which allows the storage of any
+                                        kind of data with the assurance of integrity.. </div>
+                                    <a href="ProductAndServicesAksyonChain.html" class="btn-details"><i
+                                            class="flaticon-right-arrow-1"></i> LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-            </section>
+                    <a href="contact.html" class="octf-btn octf-btn-primary">Contact Us</a>
+            </section>  
         </div>
 
-        <footer id="site-footer" class="site-footer footer-v1">
+
+        <footer id="site-footer" class="site-footer footer-v2">
             <div class="container">
-                <div class="row mt-20">
-                    <div class="col-md-4 mb-4 mb-md-0">
-                        <img src="Logos - Products/8LAYER LOGO.png" alt="" class="lazyloaded" data-ll-status="loaded">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="Logos - Products/8LAYER LOGO.png" alt="">
                     </div>
-                    <div class="col-md-8 text-left text-md-right align-self-center" style="color:white;">
-                        <p class="copyright-text">Copyright © 2021 8Layer by 8LayerTech. All Rights Reserved.</p>
+                </div>
+                <div class="space-60"></div>
+                <div class="row justify-content-center">
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <div class="contact-info box-style2 ft-contact-info">
+                            <div class="box-icon"><i class="flaticon-world-globe"></i></div>
+                            <p>411 University St, Seattle, USA</p>
+                            <h6>Our Address</h6>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <div class="contact-info box-style2 ft-contact-info">
+                            <div class="box-icon"><i class="flaticon-envelope"></i></div>
+                            <p>contact@mail.net</p>
+                            <h6>Our Mailbox</h6>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <div class="contact-info box-style2 ft-contact-info">
+                            <div class="box-icon"><i class="flaticon-phone-1"></i></div>
+                            <p>+1 -800-456-478-23</p>
+                            <h6>Our Phone</h6>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="space-65"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <!-- <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="space-20"></div>
+                        <p class="copyright-text v2">Copyright © 2021 8LayerTech by Test. All Rights Reserved.</p>
+                        <div class="space-26"></div>
+                        <div class="ft-list-icon">
+                            <a class="twitter" href="twitter.com"><i class="fab fa-twitter"></i></a>
+                            <a class="facebook" href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                            <a class="linkedin" href="linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="instagram" href="instagram.com"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
